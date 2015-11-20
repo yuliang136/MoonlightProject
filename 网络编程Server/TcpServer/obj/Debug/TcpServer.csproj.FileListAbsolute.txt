@@ -1,0 +1,6 @@
+E:\Work\YuLiangRepository\网络编程Server\TcpServer\bin\Debug\TcpServer.exe.config
+E:\Work\YuLiangRepository\网络编程Server\TcpServer\bin\Debug\TcpServer.exe
+E:\Work\YuLiangRepository\网络编程Server\TcpServer\bin\Debug\TcpServer.pdb
+E:\Work\YuLiangRepository\网络编程Server\TcpServer\obj\Debug\TcpServer.csprojResolveAssemblyReference.cache
+E:\Work\YuLiangRepository\网络编程Server\TcpServer\obj\Debug\TcpServer.exe
+E:\Work\YuLiangRepository\网络编程Server\TcpServer\obj\Debug\TcpServer.pdb

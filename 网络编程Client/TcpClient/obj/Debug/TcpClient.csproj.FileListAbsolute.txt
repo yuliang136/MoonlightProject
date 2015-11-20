@@ -1,0 +1,5 @@
+E:\Work\YuLiangRepository\网络编程Client\TcpClient\bin\Debug\TcpClient.exe.config
+E:\Work\YuLiangRepository\网络编程Client\TcpClient\bin\Debug\TcpClient.exe
+E:\Work\YuLiangRepository\网络编程Client\TcpClient\bin\Debug\TcpClient.pdb
+E:\Work\YuLiangRepository\网络编程Client\TcpClient\obj\Debug\TcpClient.exe
+E:\Work\YuLiangRepository\网络编程Client\TcpClient\obj\Debug\TcpClient.pdb
