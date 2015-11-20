@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
+using UnityEngine.UI;
 
 public class ChatManager : MonoBehaviour
 {
@@ -30,5 +32,14 @@ public class ChatManager : MonoBehaviour
 
         _clientSocket.Connect(new IPEndPoint(IPAddress.Parse(ipAddress), nPort));
 
+    }
+
+    public void SendYLMessage(InputField ifMessage)
+    {
+        string message = ifMessage.text;
+
+        byte[] data = Encoding.UTF8.GetBytes(message);
+
+        _clientSocket.Send(data);
     }
 }
