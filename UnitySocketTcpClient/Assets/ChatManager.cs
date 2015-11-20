@@ -24,6 +24,14 @@ public class ChatManager : MonoBehaviour
 	
 	}
 
+    public void OnDestroy()
+    {
+        // 必须由Client断开连接.
+        _clientSocket.Close();
+    }
+
+
+
     private void ConnectToServer()
     {
         _clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -41,5 +49,8 @@ public class ChatManager : MonoBehaviour
         byte[] data = Encoding.UTF8.GetBytes(message);
 
         _clientSocket.Send(data);
+
+        // 清空字段.
+        ifMessage.text = string.Empty;
     }
 }
