@@ -16,8 +16,10 @@ namespace ChatRoomServer
         {
             Socket tcpServer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
+            string StrIp = "192.168.2.72";
+
             // 绑定ip.
-            tcpServer.Bind(new IPEndPoint(IPAddress.Parse("192.168.2.72"), 7788));
+            tcpServer.Bind(new IPEndPoint(IPAddress.Parse(StrIp), 7788));
 
             // 线程？
             tcpServer.Listen(100);
