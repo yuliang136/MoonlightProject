@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClient", "TcpClient\TcpC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpClient", "UdpClient\UdpClient.csproj", "{07DED11A-F28E-4198-A0AD-28EE42CF3F41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClientClassTest", "TcpClientClassTest\TcpClientClassTest.csproj", "{8F620479-2A4A-43EF-AA25-01E326321DE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{07DED11A-F28E-4198-A0AD-28EE42CF3F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07DED11A-F28E-4198-A0AD-28EE42CF3F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07DED11A-F28E-4198-A0AD-28EE42CF3F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F620479-2A4A-43EF-AA25-01E326321DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F620479-2A4A-43EF-AA25-01E326321DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F620479-2A4A-43EF-AA25-01E326321DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F620479-2A4A-43EF-AA25-01E326321DE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

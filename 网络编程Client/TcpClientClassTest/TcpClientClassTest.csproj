@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>0b5aeb01-52de-4848-8d8b-637d39a2eb61</ProjectGuid>
+    <ProjectGuid>{8F620479-2A4A-43EF-AA25-01E326321DE9}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TcpClientClassTest</RootNamespace>

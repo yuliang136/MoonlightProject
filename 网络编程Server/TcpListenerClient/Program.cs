@@ -31,14 +31,16 @@ namespace TcpListenerClient
             // 0 表示从数组的哪个索引开始存放数据.
             // 1024 表示最大读取的字节数.
 
-            // 最多读取1024个.
-            // 不足1024个时，有多少读取多少.
-            // 超过1024 最多读1024.
-            int nReadLength = stream.Read(data,0,1024); // 读取数据.
+            while (true)
+            {
+                // 最多读取1024个.
+                // 不足1024个时，有多少读取多少.
+                // 超过1024 最多读1024.
+                int nReadLength = stream.Read(data, 0, 1024); // 读取数据.
+                string message = Encoding.UTF8.GetString(data, 0, nReadLength);
+                Console.WriteLine(message);
+            }
 
-            string message = Encoding.UTF8.GetString(data, 0, nReadLength);
-
-            Console.WriteLine(message);
 
             // 关闭释放资源
 
