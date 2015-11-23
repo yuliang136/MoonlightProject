@@ -12,6 +12,32 @@ namespace ChatRoomServer
     {
         private static List<Client> clientList = new List<Client>();
 
+        /// <summary>
+        /// 广播消息
+        /// </summary>
+        /// <param name="message"></param>
+        public static void BroadcastMessage(string message)
+        {
+            var notConnectedList = new List<Client>();
+
+            foreach (var client in clientList)
+            {
+                if (client.Connected)
+                {
+                    client.SendMessage(message);
+                }
+                else
+                {
+                    notConnectedList.Add(client);
+                }
+            }
+
+            foreach (var notConnectClient in notConnectedList)
+            {
+                clientList.Remove(notConnectClient);
+            }
+        }
+
         static void Main(string[] args)
         {
             Socket tcpServer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);

@@ -18,6 +18,19 @@ namespace ChatRoomServer
 
         private byte[] _bReceivedData = new byte[1024]; // 1024大小数据容器.
 
+        //public bool Connected
+        //{
+        //    get
+        //    {
+        //        return _socketClient.Connect;
+        //    }
+        //}
+
+        public bool Connected
+        {
+            get { return _socketClient.Connected; }
+        }
+
         // 构造函数.
         public Client(Socket s)
         {
@@ -45,6 +58,7 @@ namespace ChatRoomServer
 
                 if (bNotConnect)
                 {
+                    _socketClient.Close();
                     break; // 
                 }
 
@@ -56,9 +70,22 @@ namespace ChatRoomServer
                 string message = Encoding.UTF8.GetString(_bReceivedData, 0, nLength);
 
                 // TODO:服务器端接收到数据，要把这个数据分发到客服端.
+
+                // 广播消息
+                Program.BroadcastMessage(message);
+
                 Console.WriteLine("收到了消息" + message);
             }
         }
+
+        public void SendMessage(string message)
+        {
+            byte[] data = Encoding.UTF8.GetBytes(message);
+
+            _socketClient.Send(data);
+        }
+
+
 
     }
 }
