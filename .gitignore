@@ -1,0 +1,5 @@
+UnitySocketTcpClient/Library/*
+UnitySocketTcpClient/Temp/*
+网络编程Server/ChatRoomServer/bin/*
+网络编程Server/ChatRoomServer/obj/*
+网络编程Server/TcpServer/obj/*
