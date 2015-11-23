@@ -22,21 +22,21 @@ namespace ChatRoomServer
             // 线程？
             tcpServer.Listen(100);
 
-            Console.WriteLine("server running..");
+            Console.WriteLine("Server running..");
 
             // 死循环？ 
             while (true)
             {
                 Socket clientSocket = tcpServer.Accept();
 
-                Console.WriteLine("a client is connected!");
+                Console.WriteLine("A client is connected!");
 
                 // 把与每个客户端通信的逻辑.(收发消息.) 放到client端里做处理.
                 Client client = new Client(clientSocket);
 
                 clientList.Add(client);
             }
-            
+
 
 
         }

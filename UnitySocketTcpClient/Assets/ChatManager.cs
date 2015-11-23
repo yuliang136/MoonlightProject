@@ -26,6 +26,8 @@ public class ChatManager : MonoBehaviour
 
     public void OnDestroy()
     {
+        _clientSocket.Shutdown(SocketShutdown.Both);
+
         // 必须由Client断开连接.
         _clientSocket.Close();
     }
