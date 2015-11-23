@@ -16,15 +16,19 @@ namespace UdpClient
             Socket udpClient = new Socket(  AddressFamily.InterNetwork,
                                             SocketType.Dgram,
                                             ProtocolType.Udp);
-
-
-            // 发送数据.
             string strIp = "192.168.2.72";
-            EndPoint serverPoint = new IPEndPoint(IPAddress.Parse(strIp), 7788);
-            string message = Console.ReadLine();
-            byte[] data = Encoding.UTF8.GetBytes(message);
-            udpClient.SendTo(data, serverPoint);
 
+            while (true)
+            {
+                // 发送数据.
+                EndPoint serverPoint = new IPEndPoint(IPAddress.Parse(strIp), 7788);
+                string message = Console.ReadLine();
+                byte[] data = Encoding.UTF8.GetBytes(message);
+                udpClient.SendTo(data, serverPoint);
+            }
+
+
+            udpClient.Close();
             Console.ReadKey();
         }
     }
