@@ -3,3 +3,7 @@ UnitySocketTcpClient/Temp/*
 网络编程Server/ChatRoomServer/bin/*
 网络编程Server/ChatRoomServer/obj/*
 网络编程Server/TcpServer/obj/*
+网络编程Server/TcpServer/bin/*
+网络编程Server/UdpServer/obj/*
+网络编程Server/UdpServer/bin/*
+*.suo
