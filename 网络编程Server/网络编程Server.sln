@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatRoomServer", "ChatRoomS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpServer", "UdpServer\UdpServer.csproj", "{3B42E433-B434-459D-8DE7-F39819A96701}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpListenerClient", "TcpListenerClient\TcpListenerClient.csproj", "{426B116F-706B-430F-BF5C-9E0F364B79DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3B42E433-B434-459D-8DE7-F39819A96701}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B42E433-B434-459D-8DE7-F39819A96701}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B42E433-B434-459D-8DE7-F39819A96701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{426B116F-706B-430F-BF5C-9E0F364B79DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426B116F-706B-430F-BF5C-9E0F364B79DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426B116F-706B-430F-BF5C-9E0F364B79DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426B116F-706B-430F-BF5C-9E0F364B79DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

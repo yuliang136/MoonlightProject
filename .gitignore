@@ -7,7 +7,11 @@ UnitySocketTcpClient/Temp/*
 网络编程Server/TcpServer/bin/*
 网络编程Server/UdpServer/obj/*
 网络编程Server/UdpServer/bin/*
+网络编程Server/TcpListenerClient/bin/*
+网络编程Server/TcpListenerClient/obj/*
 网络编程Client/UdpClient/bin/*
 网络编程Client/UdpClient/obj/*
 网络编程Client/TcpClient/bin/*
 网络编程Client/TcpClient/obj/*
+网络编程Client/TcpClientClassTest/bin/*
+网络编程Client/TcpClientClassTest/obj/*
