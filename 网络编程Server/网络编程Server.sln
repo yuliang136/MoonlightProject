@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpServer", "UdpServer\UdpS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpListenerClient", "TcpListenerClient\TcpListenerClient.csproj", "{426B116F-706B-430F-BF5C-9E0F364B79DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpClientServerTest", "UdpClientServerTest\UdpClientServerTest.csproj", "{6BDAC5FC-270C-4B1F-AA09-F0691F670336}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{426B116F-706B-430F-BF5C-9E0F364B79DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{426B116F-706B-430F-BF5C-9E0F364B79DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{426B116F-706B-430F-BF5C-9E0F364B79DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BDAC5FC-270C-4B1F-AA09-F0691F670336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BDAC5FC-270C-4B1F-AA09-F0691F670336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BDAC5FC-270C-4B1F-AA09-F0691F670336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BDAC5FC-270C-4B1F-AA09-F0691F670336}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
